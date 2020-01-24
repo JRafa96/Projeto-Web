@@ -1,0 +1,35 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas: "Header Header Header Header" "Feriados Feriados Maximos Mensagens" "Feriados Feriados Links Links";
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: ridge;
+    border-color: rgb(107, 204, 191);
+    border-width: 7px;
+}
+
+.Header {
+    grid-area: Header;
+}
+
+.Mensagens {
+    grid-area: Mensagens;
+}
+
+.Links {
+    grid-area: Links;
+}
+
+.Feriados {
+    grid-area: Feriados;
+}
+
+.Maximos {
+    grid-area: Maximos;
+}

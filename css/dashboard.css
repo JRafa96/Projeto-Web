@@ -1,0 +1,36 @@
+body {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr;
+    grid-template-areas: "Header Header Header Header" "Perfil Ferias Ferias Mensagens";
+    grid-gap: 3px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header {
+    grid-area: Header;
+    padding-bottom: 10px;
+}
+
+.Perfil {
+    grid-area: Perfil;
+}
+
+.Ferias {
+    grid-area: Ferias;
+    position: relative;
+}
+
+.Mensagens {
+    grid-area: Mensagens;
+}
